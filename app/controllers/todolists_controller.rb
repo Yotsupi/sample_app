@@ -6,7 +6,7 @@ class TodolistsController < ApplicationController
   def create
     list = List.new(list_params)
     list.save
-    redilect_to'/top'
+    redirect_to'/top'
   end
 
   private
